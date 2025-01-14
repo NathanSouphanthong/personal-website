@@ -140,9 +140,11 @@
                   class="col-lg-8 pt-4 pt-lg-0 content align-self-center">
                     <h2>Hi, I'm Nathan!</h2>
                     <p>
-                      I'm a fourth year student at the University of Waterloo studying Systems Design Engineering and am 
-                     pursuing a career in software development. In my free time, I enjoy playing sports like hockey and basketball
-                      and ocassionally I take pictures, participate in hackathons and restore cars. Currently I am seeking oppurtunities for the Summer 2024 term!
+                      I'm a final year student at the University of Waterloo studying Systems Design Engineering graduating in 2025. Most recently, I’ve worked at a BioRender, a scientific 
+                        communication platform (think of Figma or Canvas for science) where I developed full-stack features to increase customer acquisition and brought to life a community peer 
+                        review feature to allow users to critique each others work in a meaningful way. I’ve also worked at a financial services company called Super.com, developing the Super App, 
+                        a place where individuals can save money on travel and earn money through various mediums. Earlier on, I worked on infrastructure and DevOps at OwnersBox, invoicing and auditing on the 
+                        LegalTracker matter management platform at Thomson Reuters and location analytics for North America’s largest mobile carriers at JaggedXY. Currently, I’m seeking new grad roles in 2025! 
                     </p>
                     <!-- <div class="col-lg-12 center">
                         <input type="submit" class="btn" value="My Resume">
@@ -202,69 +204,40 @@
                 data-aos-easing="ease-in-out"
                 data-aos-once="true" >
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#assesment-ass-modal" data-target="#assesment-ass-modal" data-toggle="modal">
+                        <a class="portfolio-item" href="#discord-diffusion-modal" data-target="#discord-diffusion-modal" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Discord Diffusion</div>
-                                    <p class="mb-0">Java application that aids teachers with managing test questions and 
-                                        generating customized tests for students
+                                    <p class="mb-0">A user prompted Discord bot for generating stickers using diffusion models
                                     </p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/assessment_assistant.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/discord_diffusion.png" alt="..." />
                         </a>
                     </div>
                     <div class="modal fade bd-example-modal-lg" id="assesment-ass-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content rounded-0">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalCenterTitle"><strong>Assessment Assistant</strong></h5>
-                              <a target="_blank" href="https://github.com/NathanSouphanthong/Assesment-Assistant"><i class="ion-social-github"></i></a>
+                              <h5 class="modal-title" id="exampleModalCenterTitle"><strong>Discord Diffusion</strong></h5>
+                              <a target="_blank" href="https://github.com/aandyw/DiscordDiffusion"><i class="ion-social-github"></i></a>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
                                 <h4>Project</h4>
-                                <p>The Assessment Assistant was a tool created to aid teachers in the 
-                                    storing of test questions and creating a PDF test from those stored questions. 
-                                    The application had two main functionalities. The first section allowed users to 
-                                    edit or create an existing database, this allowed for easy input and edit of questions.
-                                     Additionally, after changes were made to databases, these questions were stored in 
-                                     folders on the computer to be accessed later. The second part of the GUI is the test 
-                                     generator, this enables the user to select a database of questions. After a database 
-                                     of questions is selected, the Assessment Assistant randomly generates a test based on 
-                                     parameters (number of type of questions, name, specified by the user. Once generated, 
-                                     the test can be tailored to the user’s liking, by adding and removing select questions.
+                                <p> In January 2024, I went on exchange in Singapore at the Singapore University of Technology and Design (SUTD) and met a fellow Waterloo student (Andy!) who I 
+                                    worked on this project with. We saw that many social media platforms (e.g. Facebook Messenger and Instagram) had AI generated stickers, however 
+                                    Discord, a platform we used on a day-to-day basis did not provide this! Luckily, Discord has a great developer community centered around creating Discord
+                                    bots and apps that can be added to servers or a user's account. We opted to create an app that allows users to feed in a text prompt to the app by typing '/prompt' 
+                                    when they are messaging friends in DMs or sending messages to servers. Once the prompt is sent to the app, the request is sent to our Hugging Face Inference Endpoint
+                                    which is trained with a modified sdxl diffusion model which returns to the user 4 options of stickers generated from the prompt in a message only the user can see. 
+                                    The user can then select their desired sticker or regenerate with the same prompt.
                                 </p>
-                                <h4>Functionality</h4>
-                                <p>Database Manager</p>
-                                <ul>
-                                    <li>Can add, delete or edit multiple choice or short answer 
-                                        questions of different types (knowledge, application, thinking, communication)</li>
-                                    <li>Saves all questions to a text file to be accessed later by the database manager or 
-                                        test manager</li>
-                                </ul>
-                                <p>Test Manager</p>
-                                <ul>
-                                    <li>Generates test based number of questions for each section (specified by user) </li>
-                                    <li>Edit the generated test to delete or swap out unwanted questions</li>
-                                    <li>Re-randomize test questions</li>
-                                    <li>Export test to PDF </li>
-                                </ul>
                                 <h4>Demos</h4>
                                 <p>Editing short answer questions within the GUI (Add,Rename,Delete)</p>
-                                <img src="assets/img/Gif1.gif">
-                                <p>Editing multiple choice questions within the GUI </p>
-                                <img src="assets/img/Gif2.gif">
-                                <p>Generating and viewing of the PDF test </p>
-                                <img src="assets/img/Gif3.gif">
-                                <h4>Languages/Technologies</h4>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Eclipse</li>
-                                    <li>ITextAPI</li>
-                                </ul>
+                                <img src="assets/img/discord_diffusion_demo.gif">
                             </div>
                           </div>
                         </div>
